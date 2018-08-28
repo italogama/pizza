@@ -102,6 +102,7 @@
 				<version>2.4</version>
 				<configuration>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<skipTests>true</skipTests>
 				</configuration>
 			</plugin>
 
@@ -122,6 +123,7 @@
 				<configuration>
 					<downloadSources>true</downloadSources>
 					<downloadJavadocs>true</downloadJavadocs>
+					<skipTests>true</skipTests>
 				</configuration>
 			</plugin>
 
