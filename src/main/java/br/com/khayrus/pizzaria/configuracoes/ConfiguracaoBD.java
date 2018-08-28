@@ -25,9 +25,9 @@ public class ConfiguracaoBD {
 	public DataSource dataSource() throws IllegalStateException, PropertyVetoException {
 		ComboPooledDataSource dataSource = new ComboPooledDataSource();
 		dataSource.setDriverClass("com.mysql.jdbc.Driver");
-		dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/pizzaria");
-		dataSource.setUser("root");
-		dataSource.setPassword("");
+		dataSource.setJdbcUrl("jdbc:mysql://sql10.freesqldatabase.com/sql10253979");
+		dataSource.setUser("sql10253979");
+		dataSource.setPassword("QPgEkap9w9");
 		return dataSource;
 	}
 	
@@ -42,7 +42,7 @@ public class ConfiguracaoBD {
 		
 		Properties jpaProterties = new Properties();
 		jpaProterties.put("hibernate.dialect", "org.hibernate.dialect.MySQL5InnoDBDialect");
-		jpaProterties.put("hibernate.hbm2ddl.auto", "update");
+		jpaProterties.put("hibernate.hbm2ddl.auto", "create");
 		entityManagerFactoryBean.setJpaProperties(jpaProterties);
 		return entityManagerFactoryBean;
 	}
