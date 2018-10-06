@@ -24,10 +24,10 @@ public class ConfiguracaoBD {
 	@Bean
 	public DataSource dataSource() throws IllegalStateException, PropertyVetoException {
 		ComboPooledDataSource dataSource = new ComboPooledDataSource();
-		dataSource.setDriverClass("com.mysql.jdbc.Driver");
+		dataSource.setDriverClass("com.mysql.jdbc.Driver"); 
 		dataSource.setJdbcUrl("jdbc:mysql://sql10.freesqldatabase.com/sql10253979");
-		dataSource.setUser("sql10253979");
-		dataSource.setPassword("QPgEkap9w9");
+		dataSource.setUser("sql10253979"); //set name do usuario
+		dataSource.setPassword("QPgEkap9w9"); //set pass
 		return dataSource;
 	}
 	
@@ -47,7 +47,7 @@ public class ConfiguracaoBD {
 		return entityManagerFactoryBean;
 	}
 
-	//Gerenciador de Transação
+	//Gerenciador de Transaï¿½ï¿½o
 	@Bean
 	public JpaTransactionManager transactionManager() throws Exception {
 		JpaTransactionManager transactionManager = new JpaTransactionManager();
